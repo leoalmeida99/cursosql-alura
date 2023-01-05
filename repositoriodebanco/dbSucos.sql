@@ -37,25 +37,20 @@ PRECO_LISTA FLOAT);
 alter table tbproduto add primary key (produto);
 
 
-
-
-update tabela_de_vendedores set data_admissao = '2014-08-15', de_ferias = 0 where matricula = 00235;
-update tabela_de_vendedores set data_admissao = '2013-09-17', de_ferias = 1 where matricula = 00236;
-
-UPDATE TABELA_DE_VENDEDORES SET PERCENTUAL_COMISSAO = 0.11 WHERE MATRICULA = '00236';
-UPDATE TABELA_DE_VENDEDORES SET NOME = 'João Geraldo da Fonseca Junior' WHERE MATRICULA = '00233';
-
-
-
-
-
-
-
 insert into tabela_de_vendedores(matricula, nome, percentual_comissao, data_admissao, de_ferias) values (00237, 'Roberta Martins', 0.11, '2017-03-18', 1);
 insert into tabela_de_vendedores(matricula, nome, percentual_comissao, data_admissao, de_ferias) values (00238, 'Péricles Alves', 0.11, '2016-08-21', 0);
-INSERT INTO TABELA_DE_VENDEDORES (MATRICULA, NOME, PERCENTUAL_COMISSAO) VALUES ('00233', 'João Geraldo da Fonseca', 0.10);
-INSERT INTO TABELA_DE_VENDEDORES (MATRICULA, NOME, PERCENTUAL_COMISSAO) VALUES ('00235','Márcio Almeida Silva',0.08);
-INSERT INTO TABELA_DE_VENDEDORES (MATRICULA, NOME, PERCENTUAL_COMISSAO) VALUES('00236','Cláudia Morais',0.08);
+insert into tabela_de_vendedores(matricula, nome, percentual_comissao, data_admissao, de_ferias) values (00233, 'João Geraldo da Fonseca Junior', 0.10, '2016-08-21', 0);
+insert into tabela_de_vendedores(matricula, nome, percentual_comissao, data_admissao, de_ferias) values (00235, 'Márcio Almeida Silva', 0.8, '2014-08-15', 0);
+insert into tabela_de_vendedores(matricula, nome, percentual_comissao, data_admissao, de_ferias) values (00236, 'Cláudia Morais', 0.11, '2013-09-17', 1);
+
+
+
+
+
+
+select * from tabela_de_vendedores;
+
+
 
 INSERT INTO tbcliente(CPF, NOME, ENDERECO1, ENDERECO2, BAIRRO, CIDADE, ESTADO, CEP, IDADE, SEXO, LIMITE_CREDITO, VOLUME_COMPRA, PRIMEIRA_COMPRA, DATA_NASCIMENTO) VALUES ('00388934505', 'João da Silva', 'Rua projetada A número 10', '', 'Vila Roman', 'CARATINGA', 'Amazonas', '2222222', 30, 'M', 10000.00, 2000, 0, '1989-10-05');
 INSERT INTO tbcliente (CPF,NOME,ENDERECO1,ENDERECO2,BAIRRO,CIDADE,ESTADO,CEP,DATA_NASCIMENTO,IDADE,SEXO,LIMITE_CREDITO,VOLUME_COMPRA,PRIMEIRA_COMPRA) VALUES ('19290992743','Fernando Cavalcante','R. Dois de Fevereiro','','Água Santa','Rio de Janeiro','RJ','22000000','2000-02-12',18,'M',100000,200000,1);
